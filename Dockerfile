@@ -1,4 +1,4 @@
-FROM php:8.1.9-fpm-alpine
+FROM php:8.0.10-fpm-alpine
 WORKDIR /var/www/html
 
 RUN set -ex \
