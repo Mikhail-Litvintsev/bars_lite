@@ -5,9 +5,9 @@
 3. Скопировать файл src/.env.example в src/.env
 4. В контейнере php (docker compose exec php sh) выполнить команду: composer install. Можно снаружи запустить, находясь в папке src (если композер установлен глобально)ж
 5. В контейнере php выполнить: 
-    php artisan key:generate
-    php artisan migrate
-    php artisan optimize
+    php artisan key:generate ;
+    php artisan migrate ;
+    php artisan optimize ;
 6. При наличии установленного пакета npm, рекомендуется в папке src (снаружи контейнеров) выполнить команду 
     npm install && npm run watch. 
    Если такой возможности нет, то возможно запустить изнутри php контейнера.
