@@ -15,8 +15,8 @@ services:
       - ./nginx/certs:/etc/ssl/certs/
       - ./nginx/cron:/etc/cron.d/cron
     depends_on:
-      - php_bars
-      - postgresql_bars
+      - php
+      - postgresql
     networks:
       - bars
   php:
