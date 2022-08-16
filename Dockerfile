@@ -8,8 +8,8 @@ RUN set -ex \
 RUN apk add --no-cache zip libzip-dev nodejs npm supervisor
 #RUN docker-php-ext-install zip
 #RUN docker-php-ext-install exif
-#RUN docker-php-ext-install pdo
-#RUN docker-php-ext-install pdo_pgsql
+RUN docker-php-ext-install pdo
+RUN docker-php-ext-install pdo_pgsql
 
 RUN apk update
 #RUN apk add --no-cache zip zlib-dev
